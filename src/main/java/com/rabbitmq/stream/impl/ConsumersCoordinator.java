@@ -594,7 +594,7 @@ class ConsumersCoordinator {
           };
       ShutdownListener shutdownListener =
           shutdownContext -> {
-            this.closed.set(true);
+//            this.closed.set(true);
             managers.remove(this);
             if (shutdownContext.isShutdownUnexpected()) {
               LOGGER.debug(
